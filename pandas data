@@ -1,0 +1,26 @@
+import pandas as pd
+
+# Create sample data
+data = {
+    "Name": ["Anu", "Ravi", "Priya", "Kumar"],
+    "Food": ["Pizza", "Burger", "Pasta", "Sandwich"],
+    "Price": [250, 150, 200, 120]
+}
+
+# Convert dictionary to DataFrame
+df = pd.DataFrame(data)
+
+print("Full Data:")
+print(df)
+
+# Show first 2 rows
+print("\nFirst two rows:")
+print(df.head(2))
+
+# Filter data (price greater than 150)
+print("\nFood items with price > 150:")
+print(df[df["Price"] > 150])
+
+# Average price
+print("\nAverage price:")
+print(df["Price"].mean())
