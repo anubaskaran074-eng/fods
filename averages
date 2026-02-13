@@ -1,0 +1,7 @@
+import pandas as pd
+
+data = [25, 30, 35, 40, 45]
+
+s = pd.Series(data)
+
+print("Average =", s.mean())
