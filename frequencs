@@ -1,0 +1,10 @@
+import pandas as pd
+
+data = [10, 20, 10, 30, 20, 10, 40, 30, 20, 10]
+
+s = pd.Series(data)
+
+freq = s.value_counts()
+
+print("Frequency Distribution:")
+print(freq)
