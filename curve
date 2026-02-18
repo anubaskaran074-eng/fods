@@ -1,0 +1,23 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+# Parameters
+mean = 0        # μ
+std_dev = 1     # σ
+
+# Create x values
+x = np.linspace(mean - 4*std_dev, mean + 4*std_dev, 1000)
+
+# Normal distribution (PDF)
+y = norm.pdf(x, mean, std_dev)
+
+# Plot
+plt.plot(x, y, label=f'Normal Curve (μ={mean}, σ={std_dev})')
+plt.title("Normal Distribution")
+plt.xlabel("X values")
+plt.ylabel("Probability Density")
+plt.legend()
+plt.grid(True)
+
+plt.show()
