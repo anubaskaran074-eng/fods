@@ -1,0 +1,10 @@
+import numpy as np
+
+# Sample data
+x = np.array([10, 20, 30, 40, 50])
+y = np.array([15, 25, 35, 45, 60])
+
+# Pearson correlation coefficient
+r = np.corrcoef(x, y)[0, 1]
+
+print("Correlation coefficient (r):", r)
